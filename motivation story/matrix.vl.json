@@ -1,0 +1,19 @@
+{
+  "repeat": {"column": ["Horsepower","Displacement"],
+  "row": ["Acceleration", "Miles_per_Gallon"]},
+  "spec": {
+    "data": {"url": "data/cars.json"},
+    "mark": "circle",
+    "encoding": {
+      "x": {
+        "field": {"repeat": "column"},
+        "type": "quantitative"
+      },
+      "y": {
+        "field": {"repeat": "row"},
+        "type": "quantitative"
+      },
+      "color": {"field": "Origin","type": "nominal"}
+    }
+  }
+}
